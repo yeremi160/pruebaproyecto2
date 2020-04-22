@@ -12,7 +12,7 @@
     <label for="b">ingrese el segundo numero</label>
     <input type="number"id="b" name="b"><br>
 
-    <button onclick="sumar()">sumar</button> <button onclick="multiplicar()">multiplicar</button><button onclick="restar()">restar</button>
+    <button onclick="sumar()">sumar</button> <button onclick="multiplicar()">multiplicar</button><button onclick="restar()">restar</button><button onclick="dividir()">dividir</button>
     <br>
 
     <label for="resultado">este es el resultado</label>
@@ -103,6 +103,34 @@
  
 
 </script>
+
+<script>
+    function dividir() {
+        var a =document.getElementById("a").value;
+        var b =document.getElementById("b").value;
+        var resultado;
+ 
+ 
+        if (a == "") {
+            a = 0;
+        }else{
+            a = parseInt(a);
+        }
+ 
+        if (b == "") {
+            b = 0;
+        }else{
+            b = parseInt(b);
+        }
+ 
+        
+        resultado = a / b;
+ 
+        document.getElementById("resultado").value = resultado 
+    }
+  
+ 
+ </script>
 
 
 
