@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>solucion de problemas</title>
+</head>
+<body>
+    <h1>suma de 2 variables</h1>
+    <label for="a">ingrese el primer numero</label>
+    <input type="number"id="a" name="a"><br>
+    <label for="b">ingrese el segundo numero</label>
+    <input type="number"id="b" name="b"><br>
+
+    <button onclick="sumar()">sumar</button><br>
+
+    <label for="resultado">este es el resultado</label>
+    <input type="number"id="resultado" name="resultado"><br>
+
+    <script>
+        function sumar() {
+            var a =document.getElementById("a").value;
+            var b =document.getElementById("b").value;
+            var resultado;
+
+            resultado = a + b;
+
+            document.getElementById("resultado").value = resultado 
+        }
+      
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>
